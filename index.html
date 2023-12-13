@@ -4,8 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="teste.js"></script>
 </head>
 <body>
-    <h1>PAG INICIAL</h1>
+    <header>
+        <div class="logo">
+            <img src="public/imgs/fist-preto.png" alt="logo">
+        </div>
+        <nav>
+            <button id="btn-menu" onclick="animar()">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Área do aluno</a>
+        </nav>
+    </header>
+
+    <section id="promocao">
+
+        <div class="icons1"></div>
+
+        <div class="text">
+            <h1><span class="destaque-mark">Aulas praticas de Bateria</span> para iniciantes e intermediários.</h1>
+            <p>Conheça nossa forma de ensino e aprendizagem e <br>deixe as batidas de seu coração guiar seu ritmo.</p>
+            <span class="desconto">
+                <strong>De:</strong><i><del>R$ 120,00</del></i><br>
+                <strong>Por:</strong><span id="destaque">R$ 80,00</span>
+            </span>
+            <div class="btn">
+                <p>Assinar Agora! ></p>
+            </div>
+        </div>
+
+        <div class="icons1"></div>
+    </section>
+    
+    <section id="video">
+        <div class="text">
+            <h2>Acesse nosso canal no <span class="destaque-mark">Youtube</span></h2>
+        </div>
+    </section>
+
+    <section id="avaliacoes">
+        <div class="container">
+            <h2>Avaliações de <span class="destaque-mark">alunos cadastrados na plataforma!</span></h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4>Nome</h4>
+                    <p>avaliação</p>
+                    <div class="nota"></div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4>Nome</h4>
+                    <p>avaliação</p>
+                    <div class="nota"></div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <h4>Nome</h4>
+                    <p>avaliação</p>
+                    <div class="nota"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="text">
+            <h1>Olá, eu sou <span id="destaque">Lucas Mattos</span></h1>
+            <p>Professor de bateria, Técnico de informática e atualmente, cursando o 8º período de Engenharia de produção pela Faculdade Federal CEFET/RJ</p>
+            <div class="redes-contatos"></div>
+        </div>
+
+        <div class="foto">
+            <img src="public/imgs/WhatsApp Image 2023-11-07 at 15.46.22.jpeg" alt="Lucas Mattos">
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <img src="public/imgs/fist-branco.png" alt="logo">
+        </div>
+
+        <div class="duvidas">
+            <h3>Duvidas?</h3>
+            <li>como me torno aluno?</li>
+            <li>Como pagar a mensalidade?</li>
+            <li>Como fazer as aulas?</li>
+        </div>
+
+        <div class="redes">
+            <h3>Redes sociais:</h3>
+        </div>
+    </footer>
+
 </body>
 </html>

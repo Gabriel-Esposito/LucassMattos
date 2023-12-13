@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --titulo:'Outfit', sans-serif;
+    --text:'Roboto', sans-serif;
+    --cor1:#0C1524;
+    --cor2:#0B76BD;
+    --cor3:#FFAE00;
+}
+
+* {
+    margin: 0;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+header{
+    /* width: 100vw; */
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+    /* position: fixed; */
+}
+.logo {
+    width: 50%;
+    text-align: center;
+}
+.logo > img{
+    width: 8%;
+}
+nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+nav > a {
+    color: black;
+    font-size: 1.3em;
+    margin: 0em 1em;
+    text-decoration: none;
+    font-family: var(--titulo);
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgba(6, 224, 6, 0.637);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+/* ======================================================================== */
+button {
+    width: 3.7em;
+    height: 3.5em;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: transparent;
+    display: none;
+    cursor: pointer;
+}
+
+.linha {
+    width: 1.5em;
+    height: 0.3em;
+    background-color: black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.4em auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2s;
+}
+
+button.ativar .linha:nth-child(1){
+    transform: translateY(9px) rotate(-49deg);
+    background-color: red;
+}
+
+button.ativar .linha:nth-child(2){
+    width: 0;
+}
+
+button.ativar .linha:nth-child(3){
+    transform: translateY(-10px) rotate(49deg);
+    background-color: red;
+}
+/* ======================================================================== */
