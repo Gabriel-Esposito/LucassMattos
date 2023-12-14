@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsividade.css">
     <script src="teste.js"></script>
 </head>
 <body>
@@ -18,9 +19,11 @@
                 <span class="linha"></span>
                 <span class="linha"></span>
             </button>
-            <a href="">Home</a>
-            <a href="">Sobre</a>
-            <a href="">Área do aluno</a>
+            <div id="links-menu">
+                <a href="">Home</a>
+                <a href="">Sobre</a>
+                <a href="">Área do aluno</a>
+            </div>
         </nav>
     </header>
 
@@ -36,7 +39,7 @@
                 <strong>Por:</strong><span id="destaque">R$ 80,00</span>
             </span>
             <div class="btn">
-                <p>Assinar Agora! ></p>
+                <p>Assinar Agora!></p>
             </div>
         </div>
 
@@ -110,5 +113,18 @@
         </div>
     </footer>
 
+    <script>
+        function resolucao(){
+            let tela = window.innerWidth;
+            let links = document.getElementById('links-menu')
+            if (tela <= 650){
+                links.classList.toggle('menu')
+            }else if (tela > 700){
+                links.classList.remove('menu')
+            }
+            console.log(tela)
+        }
+        resolucao()
+    </script>
 </body>
 </html>

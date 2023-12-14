@@ -38,7 +38,7 @@ nav {
     display: flex;
     align-items: center;
 }
-nav > a {
+#links-menu > a {
     color: black;
     font-size: 1.3em;
     margin: 0em 1em;
@@ -48,7 +48,7 @@ nav > a {
     position: relative;
 }
 
-nav a::after {
+#links-menu a::after {
     content: " ";
     width: 0%;
     height: 4px;
@@ -59,23 +59,36 @@ nav a::after {
     transition: 0.3s ease-in-out;
 }
 
-nav a:hover::after {
+#links-menu a:hover::after {
     width: 100%;
+}
+.menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    background-color: white;
+    border: 1px solid black;
+    border-top: none;
+}
+.menu > a{
+    padding: 0.2em 0em;
 }
 /* ======================================================================== */
 button {
-    width: 3.7em;
-    height: 3.5em;
+    width: 2.7em;
+    height: 2.5em;
     border: 2px solid black;
     border-radius: 4px;
     background: transparent;
     display: none;
     cursor: pointer;
+    margin: auto;
 }
 
 .linha {
-    width: 1.5em;
-    height: 0.3em;
+    width: 1.3em;
+    height: 0.2em;
     background-color: black;
     border-radius: 4px;
     display: block;
@@ -84,9 +97,11 @@ button {
     transform-origin: center;
     transition: 0.2s;
 }
-
+button.ativar {
+    border: 2px solid red;
+}
 button.ativar .linha:nth-child(1){
-    transform: translateY(9px) rotate(-49deg);
+    transform: translateY(6px) rotate(-49deg);
     background-color: red;
 }
 
