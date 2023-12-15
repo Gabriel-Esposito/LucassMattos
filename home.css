@@ -118,7 +118,7 @@ button.ativar .linha:nth-child(3){
 /* ======================================================================== */
 #promocao {
     height: 60vh;
-    padding: 2em;
+    padding: 6em 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,6 +138,7 @@ button.ativar .linha:nth-child(3){
 #i1{
     transform: rotate(11deg);
     transition: 0.5s;
+    margin-top: -3em;
 }
 #promocao:hover  #i1 {
     margin-right: 30%;
@@ -153,6 +154,7 @@ button.ativar .linha:nth-child(3){
     transform: rotate(-42deg);
 }
 #i3{
+    margin-top: -5em;
     margin-right: 90%;
     transform: rotate(10deg);
     transition: 0.5s;
@@ -232,3 +234,77 @@ button.ativar .linha:nth-child(3){
     color: var(--cor4);
 }
 /* ======================================================================== */
+#video {
+    margin-top: 5em;
+    height: 60vh;
+    padding: 2em;
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+}
+#video > .text > h2 {
+    font-family: var(--titulo);
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: center;
+}
+#capa-youtube{
+    width: 1em;
+    height: 1em;
+    padding-top: 0.2em;
+    margin-left: 0.5em;
+}
+/* ======================================================================== */
+#avaliacoes {
+    height: 60vh;
+    padding: 4em 2em;
+    text-align: center;
+}
+#avaliacoes > h2 {
+    font-family: var(--titulo);
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 3em;
+}
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    width: 20%;
+    height: 40vh;
+    margin: 0em 3.6em;
+}
+.card {
+    height: 100%;
+    padding: 1em;
+    border:1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foto-avaliacoes {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.foto-avaliacoes> img{
+    width: 100%;
+    height: 100%;
+}
+.card > h4{
+    font-family: var(--titulo);
+    font-weight: 500;
+    margin: 1em 0em;
+}
+.card > p {
+    margin-bottom: 1em;
+    font-family: var(--text);
+}
