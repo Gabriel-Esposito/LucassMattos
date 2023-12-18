@@ -1,6 +1,54 @@
+@media only screen and (max-width:1300px){
+    .icons1{
+        width: 10%;
+    }
+    #promocao > .text {
+        width: 80%;
+    }
+    #video > .text > h2 {
+        margin-bottom: 1em;
+    }
+    .redes-contatos {
+        width: 100%;
+    }
+    .duvidas {
+        width: 30%;
+    }
+}
 @media only screen and (max-width:1000px){
     .logo > img{
         width: 15%;
+    }
+    #video > .youtube  iframe {
+        height: 270px;
+    }
+    .cards {
+        width: 30%;
+        margin: 0em 2em;
+    }
+    #sobre {
+        padding: 4em 2em;
+    }
+    #sobre > .text {
+        padding: 0em 1em 0em 0em;
+        width: 50%;
+    }
+    .foto > img {
+        width: 100%;
+        height: 100%;
+    }
+    .redes-contatos  i {
+        margin: 0em 0.5em
+    }
+    footer > .logo {
+        width: 20%;
+        text-align: center;
+    }
+    footer > .logo img {
+        width: 100%;
+    }
+    .duvidas {
+        width: 40%;
     }
 }
 @media only screen and (max-width:780px){
@@ -21,6 +69,30 @@
     .menu{
         right: 20%;
     }
+    .icons1 {
+        display: none;
+    }
+    #promocao > .text {
+        width: 100%;
+    }
+    #video > .youtube  iframe {
+        width: 400px;
+    }
+    #avaliacoes {
+        height: 100%;
+    }
+    .container {
+        width: 100%;
+        height: 52vh;
+        overflow-y: auto;
+    }
+    .cards {
+        margin: 0em 3em;
+    }
+    .card {
+        width: 22vh;
+    }
+
 }
 @media only screen and (max-width:500px){
     .menu{
