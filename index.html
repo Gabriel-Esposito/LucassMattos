@@ -129,7 +129,7 @@
                 <span class="linha"></span>
                 <span class="linha"></span>
             </button>
-            <div id="links-menu">
+            <div id="links-menu" class="menu">
                 <a href="">Home</a>
                 <a href="">Sobre</a>
                 <a href="">Área do aluno</a>
@@ -164,19 +164,5 @@
         <a href=""><i class="fa fa-github" style="font-size:24px"></i>Gabriel de Abreu</a>
         <a href=""><i class="fa fa-github" style="font-size:24px"></i>Miguel Bento</a>
     </div>
-
-    <script>
-        function resolucao(){
-            let tela = window.innerWidth;
-            let links = document.getElementById('links-menu')
-            if (tela <= 650){
-                links.classList.toggle('menu')
-            }else if (tela > 700){
-                links.classList.remove('menu')
-            }
-            console.log(tela)
-        }
-        resolucao()
-    </script>
 </body>
 </html>

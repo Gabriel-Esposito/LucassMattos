@@ -64,18 +64,6 @@ nav {
 #links-menu a:hover::after {
     width: 100%;
 }
-.menu{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 75px;
-    background-color: white;
-    border: 1px solid black;
-    border-top: none;
-}
-.menu > a{
-    padding: 0.2em 0em;
-}
 /* ======================================================================== */
 button {
     width: 2.7em;
@@ -279,8 +267,8 @@ button.ativar .linha:nth-child(3){
     margin: 0em 3.6em;
 }
 .card {
-    height: 100%;
-    padding: 1em;
+    height: 45vh;
+    padding: 0.5em;
     border:1px solid black;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
@@ -289,14 +277,13 @@ button.ativar .linha:nth-child(3){
     align-items: center;
 }
 .foto-avaliacoes {
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 60%;
+    height: 60%;
 }
 .foto-avaliacoes> img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 .card > h4{
     font-family: var(--titulo);
